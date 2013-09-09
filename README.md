@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+  class Foo
+    include ProtoConfig
+
+    proto_collaborators :bar
+
+    def foo
+      bar.bar
+    end
+  end
+```
 
 ## Contributing
 
