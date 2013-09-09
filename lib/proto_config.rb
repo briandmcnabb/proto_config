@@ -22,7 +22,7 @@ module ProtoConfig
     end
 
     def proto_collaborator(arg)
-      arg = arg.to_s
+      name = name
       class_eval(%Q{
         def #{arg}
           @#{arg} ||= config.fetch(:#{arg}){ #{camelize(arg)} }
